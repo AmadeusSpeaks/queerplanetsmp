@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Queer Planet SMP</title>
+  <script defer src="navbar.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="safetyexit.js"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          pink: { 600: '#db2777', 700: '#be185d' },
+          indigo: { 600: '#4f46e5', 700: '#4338ca' }
+        }
+      }
+    }
+  }
+</script>
+
+</head>
+<body class="bg-gray-100 dark:bg-gray-950 text-black dark:text-white transition-colors duration-300">
+
+
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 text-white shadow-md">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 bg-transparent">
+
+    <!-- Logo / Name -->
+    <div class="text-xl font-bold tracking-wide drop-shadow-md">
+      Queer Planet SMP
+    </div>
+
+<div class="flex items-center gap-3">
+  <a href="index.html" class="px-3 py-1 rounded-full bg-black/40 hover:bg-black/60 text-white text-sm font-semibold drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white transition">
+    Home
+  </a>
+  <a href="about.html" class="px-3 py-1 rounded-full bg-black/40 hover:bg-black/60 text-white text-sm font-semibold drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white transition">
+    About
+  </a>
+  <a href="rules.html" class="px-3 py-1 rounded-full bg-black/40 hover:bg-black/60 text-white text-sm font-semibold drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white transition">
+    Rules
+  </a>
+  <a href="join.html" class="px-3 py-1 rounded-full bg-black/40 hover:bg-black/60 text-white text-sm font-semibold drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white transition">
+    Join Us
+  </a>
+  <a href="contact.html" class="px-3 py-1 rounded-full bg-black/40 hover:bg-black/60 text-white text-sm font-semibold drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white transition">
+    Support
+  </a>
+<a href="hotlines.html" class="px-3 py-1 rounded-full bg-black/40 hover:bg-red-600 hover:text-white text-white text-sm font-semibold drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white transition">
+  🆘 Hotlines
+</a>
+
+
+  <!-- Dark Mode Toggle -->
+  <button id="darkToggle"
+    class="px-3 py-1 rounded-full bg-black/40 hover:bg-black/60 text-white text-sm font-semibold drop-shadow-md focus:outline-none focus:ring-2 focus:ring-white transition">
+    Toggle Dark Mode
+  </button>
+</div>
+
+
+
+  </nav>
+</header>
+ <!-- Spacer to prevent content hiding under sticky navbar -->
+  <div class="h-20"></div>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+
+
+
+<main class="max-w-4xl mx-auto px-6 py-12 space-y-10">
+  <section>
+    <h1 class="text-4xl font-bold mb-4">🌈 About Queer Planet SMP</h1>
+    <p class="text-lg text-gray-800 dark:text-gray-300">
+      Queer Planet SMP is a survival Minecraft server created as a dedicated safe space for the LGBTQIA+ community, plural systems (both traumagenic and non-traumagenic), neurodivergent folks, and the people who love and support them.
+    </p>
+    <p class="mt-4 text-gray-700 dark:text-gray-400">
+      We know how hard it can be to find spaces in gaming where you don’t have to hide who you are. Queer Planet SMP exists to change that — to offer a sanctuary where creativity, authenticity, and mutual respect thrive. Whether you’re here to build a mushroom cottage, survive with your systemmates, or just hang out in a cozy queer village, this is your home.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-semibold mb-3">🛡️ What Makes Us Different</h2>
+    <ul class="list-disc pl-6 space-y-3 text-gray-700 dark:text-gray-300">
+      <li><strong>18+ Only:</strong> Our server is strictly for adults — free from unsafe dynamics and age policing.</li>
+      <li><strong>LGBTQIA+ Owned and Led:</strong> We’re not just inclusive — we’re queer-run from the ground up.</li>
+      <li><strong>Plural-Inclusive and System-Safe:</strong> All systems are valid. No gatekeeping. No mockery.</li>
+      <li><strong>Consent Culture in Practice:</strong> No PvP, teleporting, or pranks without clear and ongoing consent.</li>
+      <li><strong>No Tolerance for Hate or Harassment:</strong> Bigotry is not welcome here — not even once.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-semibold mb-3">🧱 Minecraft Server Features</h2>
+    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+      <li>🌍 Survival-focused SMP gameplay</li>
+      <li>🧭 Custom spawn & queer-themed zones</li>
+      <li>🧙 Plural-friendly chat and private spaces</li>
+      <li>📜 In-game rules and <code>/report</code> system</li>
+      <li>💬 Discord-linked chat (real-time communication)</li>
+      <li>🏠 Land claims, grief protection, and opt-in teleporting</li>
+      <li>🏳️‍⚧️ Pride areas, memorials, and comfort builds</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-semibold mb-3">💬 Our Discord Community</h2>
+    <p class="text-gray-700 dark:text-gray-300 mb-3">
+      Our Discord server is the heart of Queer Planet SMP — a 24/7 social space offering support, creativity, and connection.
+    </p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300">
+      <li>🪷 Safe venting and emotional support</li>
+      <li>🎨 Art and self-expression spaces</li>
+      <li>🔖 Plural check-ins and system threads</li>
+      <li>🎉 Community events and game nights</li>
+      <li>🎮 Cross-server chat and community polls</li>
+    </ul>
+    <p class="mt-4 text-gray-700 dark:text-gray-400">
+      New members go through onboarding where they choose pronouns, identity roles, and support settings. Our mods are plural-aware and trauma-informed.
+    </p>
+  </section>
+
+  <section class="border-t pt-6 mt-8">
+    <h2 class="text-2xl font-bold mb-3">🏳️‍🌈 You Belong Here.</h2>
+    <p class="text-lg text-gray-800 dark:text-gray-300">
+      Queer Planet SMP is built on the belief that people flourish when they’re seen, respected, and celebrated — not just tolerated.
+    </p>
+    <p class="mt-4 text-gray-700 dark:text-gray-400">
+      Whether you’re trans, ace, bi, aro, enby, questioning, plural, disabled, or all of the above — this world was built with you in mind. Come build something magical with us.
+    </p>
+  </section>
+</main>
+
+
+
+
+
+<footer class="bg-gray-200 dark:bg-gray-900 text-gray-800 dark:text-gray-100 py-6 mt-16">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+    
+    <div class="flex items-center gap-2">
+<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.249a18.391 18.391 0 00-5.508 0 12.384 12.384 0 00-.617-1.249.077.077 0 00-.079-.037c-1.63.288-3.36.77-4.884 1.515a.07.07 0 00-.031.027C.533 9.045-.32 13.579.099 18.057a.081.081 0 00.031.055c2.052 1.503 4.042 2.416 5.992 3.03a.077.077 0 00.084-.027c.461-.63.873-1.295 1.226-1.994a.076.076 0 00-.041-.104 11.87 11.87 0 01-1.713-.819.077.077 0 01-.008-.129c.115-.086.23-.173.343-.263a.075.075 0 01.077-.01c3.617 1.654 7.523 1.654 11.08 0a.075.075 0 01.078.009c.114.09.228.178.343.264a.077.077 0 01-.007.129 11.61 11.61 0 01-1.714.818.076.076 0 00-.04.105c.36.7.773 1.364 1.226 1.994a.076.076 0 00.084.028c1.95-.614 3.94-1.527 5.993-3.03a.077.077 0 00.031-.055c.5-5.177-.838-9.663-3.548-13.661a.06.06 0 00-.03-.028zM8.02 15.331c-1.182 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.174 1.094 2.156 2.418 0 1.334-.955 2.419-2.156 2.419zm7.974 0c-1.182 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.174 1.094 2.156 2.418 0 1.334-.946 2.419-2.156 2.419z"/>
+</svg>
+
+      <a href="https://discord.gg/7yUhYJxav3" class="hover:underline font-medium">
+        Join Our Discord
+      </a>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center gap-2 text-sm">
+      <a href="https://www.thetrevorproject.org/donate/" target="_blank" class="hover:underline">
+        Donate to The Trevor Project
+      </a>
+      <span class="hidden md:inline">|</span>
+      <a href="https://www.opencounseling.com/suicide-hotlines" target="_blank" class="hover:underline">
+        Suicide & Crisis Resources
+      </a>
+    </div>
+
+    <div class="text-xs text-center md:text-right">
+      © 2025 Queer Planet SMP. You belong here.
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
