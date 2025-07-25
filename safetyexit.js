@@ -1,21 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
+  console.log("Safety exit active."); // Confirm script loads
+
   let escPresses = 0;
   let timer = null;
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       escPresses++;
+      console.log(`Escape pressed ${escPresses} time(s)`);
 
-      if (escPresses === 1) {
-        // Immediately clear timer to prevent race condition
-        clearTimeout(timer);
-
-        // Redirect safely
-        window.location.assign('https://www.google.com');
-        return;
+      if (escPresses >= 1) {
+        console.log("Redirecting...");
+        window.location.href = "https://www.google.com"; // Try href for max compatibility
       }
 
-      // Reset count if timeout expires
       clearTimeout(timer);
       timer = setTimeout(() => {
         escPresses = 0;
