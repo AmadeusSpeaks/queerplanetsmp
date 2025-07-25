@@ -1,5 +1,3 @@
-// safetyExit.js
-
 document.addEventListener('DOMContentLoaded', () => {
   let escPresses = 0;
   let timer = null;
@@ -9,10 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
       escPresses++;
 
       if (escPresses === 3) {
-        window.location.href = 'https://www.google.com';
+        // Immediately clear timer to prevent race condition
+        clearTimeout(timer);
+
+        // Redirect safely
+        window.location.assign('https://www.google.com');
+        return;
       }
 
-      // Reset after 1.5 seconds if not pressed three times
+      // Reset count if timeout expires
       clearTimeout(timer);
       timer = setTimeout(() => {
         escPresses = 0;
