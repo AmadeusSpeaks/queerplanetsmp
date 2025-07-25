@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') {
       escPresses++;
 
-      if (escPresses === 3) {
+      if (escPresses === 1) {
         // Immediately clear timer to prevent race condition
         clearTimeout(timer);
 
